@@ -1,16 +1,83 @@
-# React + Vite
+# FloraVision
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FloraVision is a modern, visually rich landing page for an indoor plant store built with React, Vite, and Tailwind CSS. The experience highlights trendy plants, featured products, customer reviews, and clear calls to action.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive hero section with a polished plant-focused layout
+- Curated plant collections and trend highlights
+- Customer review cards and recommendation sections
+- Clean, modern UI designed for a premium storefront experience
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- React 19
+- Vite 7
+- Tailwind CSS 4
+- ESLint
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open the local preview URL shown in the terminal.
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Live Demo
+
+Add your deployed website URL here:
+
+- Live URL: https://your-live-url-here.com
+
+## Folder and File Structure
+
+```text
+FloraVision/
+├── public/                          # Static assets
+├── src/
+│   ├── assets/
+│   │   ├── index.js                 # Asset exports
+│   │   ├── customers/              # Customer images
+│   │   ├── fonts/                  # Font files and CSS
+│   │   └── plants/                 # Plant images
+│   ├── components/
+│   │   ├── header.jsx              # Top navigation bar
+│   │   ├── sections/
+│   │   │   ├── footer.jsx          # Footer section
+│   │   │   ├── heading.jsx         # Reusable section heading
+│   │   │   ├── hero.jsx            # Hero section
+│   │   │   ├── recommended.jsx     # Recommendations section
+│   │   │   ├── trend.jsx           # Trend section
+│   │   │   └── review/
+│   │   │       ├── card.jsx        # Review card component
+│   │   │       ├── index.jsx       # Review section container
+│   │   │       └── stars.jsx       # Star rating component
+│   │   └── ui/
+│   │       ├── button.jsx          # Reusable button
+│   │       └── cards/
+│   │           ├── card.jsx        # Base card component
+│   │           └── clipped.jsx     # Clipped card effect component
+│   ├── config/
+│   │   ├── navigation.config.js    # Navigation links
+│   │   ├── review.config.js        # Review content
+│   │   ├── top.config.js           # Top products content
+│   │   └── trend.config.js         # Trend product content
+│   ├── App.jsx                     # Main app component
+│   ├── index.css                   # Global styles
+│   └── main.jsx                    # Application entry point
+├── index.html                      # Vite HTML template
+├── package.json                    # Scripts and dependencies
+├── vite.config.js                  # Vite configuration
+└── README.md                       # Project documentation
+```
