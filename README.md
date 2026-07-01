@@ -38,7 +38,7 @@ npm run build
 
 Add your deployed website URL here:
 
-- Live URL: https://your-live-url-here.com
+- Live URL: https://floravision-324u.onrender.com
 
 ## Folder and File Structure
 
